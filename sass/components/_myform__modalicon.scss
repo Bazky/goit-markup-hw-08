@@ -1,0 +1,10 @@
+.my-form .my-form__modal-icon {
+  width: 18px;
+  height: 18px;
+  margin: 0 10px;
+  transition: fill var(--cubic-bezier);
+}
+
+.my-form .my-form__modal-icon:focus {
+  fill: var(--lightblue);
+}

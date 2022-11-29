@@ -1,0 +1,26 @@
+.regular-customer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.regular-customer__border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid currentColor;
+  color: var(--client-borders);
+  border-radius: 4px;
+  transition: color var(--cubic-bezier);
+}
+
+.regular-customer__icon {
+  fill: currentColor;
+}
+
+.regular-customer__border:hover,
+.regular-customer__border:focus {
+  color: var(--lightblue);
+}

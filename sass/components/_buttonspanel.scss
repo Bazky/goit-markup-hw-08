@@ -1,0 +1,26 @@
+.buttons-panel {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 8px;
+}
+.button {
+  background-color: var(--lightgrey);
+  color: var(--black);
+  padding: 6px 22px;
+  line-height: 1.63;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color var(--cubic-bezier), color var(--cubic-bezier),
+    box-shadow var(--cubic-bezier);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--lightblue);
+  color: var(--white);
+  box-shadow: var(--buttons-shadow);
+}

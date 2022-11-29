@@ -1,0 +1,24 @@
+.my-form__input {
+  display: block;
+  width: 100%;
+}
+.my-form__fieldset:has(input:focus) {
+  border-color: var(--lightblue);
+}
+
+.my-form__fieldset:has(input:focus) .my-form__modal-icon {
+  fill: var(--lightblue);
+}
+
+.my-form .my-form__input {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--grey);
+  transition: border-color var(--cubic-bezier);
+}
+
+.my-form .my-form__input:focus {
+  outline: 0;
+  border-color: var(--lightblue);
+}

@@ -1,0 +1,26 @@
+.whatwedo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.whatwedo__position {
+  position: relative;
+}
+.whatwedo__description {
+  display: flex;
+  position: absolute;
+  background: rgba(47, 48, 58, 0.8);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  color: var(--white);
+  font-weight: 700;
+  font-size: inherit;
+}
+.whatwedo__focus:focus {
+  text-decoration: none;
+}

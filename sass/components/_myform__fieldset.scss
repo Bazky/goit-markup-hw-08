@@ -1,0 +1,29 @@
+.my-form__fieldset {
+  display: flex;
+  position: relative;
+  margin-top: 30px;
+  border-radius: 6px;
+  height: 40px;
+  align-items: center;
+  margin-block: 28px;
+  border: 1px solid var(--grey);
+  cursor: pointer;
+  transition: border-color var(--cubic-bezier);
+}
+.fieldset-comments {
+  position: relative;
+  height: 120px;
+  margin-bottom: 0;
+}
+
+.textarea-comment {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  resize: none;
+  padding: 12px 16px;
+}
+
+.fieldset-comments:has(textarea:focus) {
+  border-color: var(--lightblue);
+}

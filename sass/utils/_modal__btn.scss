@@ -1,0 +1,19 @@
+.modal__btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--client-borders);
+  background-color: var(--white);
+}
+
+.modal__btn-close {
+  width: 11px;
+  height: 11px;
+}

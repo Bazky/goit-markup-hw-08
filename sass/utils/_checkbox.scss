@@ -1,0 +1,67 @@
+.checkbox {
+  position: relative;
+  display: flex;
+  color: var(--grey);
+  line-height: 1.69;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+
+.checkbox input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.legal-checkbox {
+  display: flex;
+  gap: 7px;
+}
+
+.checkbox .checkmark {
+  top: 4px;
+  left: 0;
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--black);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.checkmark::after {
+  content: "";
+  left: 3px;
+  top: -2px;
+  width: 6px;
+  height: 10px;
+  border: 2px solid var(--white);
+  position: absolute;
+  transform: rotate(45deg);
+  border-width: 0 2px 2px 0;
+  display: none;
+}
+
+.checkbox input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.checkbox input:checked ~ .checkmark {
+  background-color: var(--lightblue);
+  border-color: var(--lightblue);
+}
+
+.modal-terms {
+  color: var(--lightblue);
+}
+
+.form-button {
+  margin-top: 30px;
+  transition: box-shadow var(--cubic-bezier);
+}
+
+.form-button:hover,
+.form-button:focus {
+  box-shadow: var(--buttons-shadow);
+}
