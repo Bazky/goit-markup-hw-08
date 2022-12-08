@@ -5,6 +5,12 @@
   align-items: center;
   gap: 30px;
 }
+.tablet {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
 .whatwedo__position {
   position: relative;
 }

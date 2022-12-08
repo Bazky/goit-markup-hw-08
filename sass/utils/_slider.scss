@@ -23,4 +23,7 @@
   color: var(--white);
   width: 696px;
   margin: 0 auto;
+  @media screen and (max-width: 1200px) {
+    font-size: 26px;
+  }
 }

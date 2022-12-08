@@ -58,6 +58,12 @@
             >
           </li>
         </ul>
+        <!-- mobile menu -->
+        <!-- <div class="mobile-menu d-none">
+          <svg><use href="./images/icons.svg#mobile-menu"></use></svg>
+          <button class="toggle-menu">X</button>
+        </div> -->
+        <!-- mobile menu ends -->
       </div>
     </header>
     <main>
@@ -219,7 +225,7 @@
 
       <section class="section">
         <div class="container">
-          <h2 class="section-headers">What we do</h2>
+          <h2 class="section-headers tablet">What we do</h2>
           <ul class="whatwedo">
             <li class="whatwedo__position">
               <a href="#" class="whatwedo__focus">
@@ -554,30 +560,36 @@
               </li>
             </ul>
           </div>
-          <form class="newsletter">
-            <label class="socials__header" for="newsletter"
-              >SUBSCRIBE TO THE NEWSLETTER</label
-            >
-
-            <fieldset class="newsletter__fieldset">
-              <input
-                class="newsletter__input"
-                id="newsletter"
-                type="email"
-                placeholder="E-mail"
-                name="write your email"
-              />
-            </fieldset>
-            <button class="newsletter__button buttonjs" type="submit">
-              Subscribe
-              <svg width="24px" height="24px">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
+          <div class="newsletter">
+            <p class="socials__header" for="newsletter">
+              SUBSCRIBE TO THE NEWSLETTER
+            </p>
+            <ul class="newsletter__list">
+              <li>
+                <fieldset class="newsletter__fieldset">
+                  <input
+                    class="newsletter__input"
+                    id="newsletter"
+                    type="email"
+                    placeholder="E-mail"
+                    name="write your email"
+                  />
+                </fieldset>
+              </li>
+              <li>
+                <button class="newsletter__button" type="submit">
+                  Subscribe
+                  <svg width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
         </footer>
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

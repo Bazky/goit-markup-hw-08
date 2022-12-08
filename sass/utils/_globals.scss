@@ -27,12 +27,28 @@ img {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
+
 .section-headers {
   font-weight: 700;
   font-size: 36px;
@@ -41,4 +57,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--black);
   margin-bottom: 50px;
+  @media screen and (max-width: 1200px) {
+    font-size: 28px;
+  }
 }
