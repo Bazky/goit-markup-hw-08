@@ -2,28 +2,74 @@
   background-size: cover;
   max-width: 1600px;
   height: 600px;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(255, 255, 255, 0)
-    ),
-    url(../images/mainwallpaper.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--client-borders);
   margin: 0 auto;
   padding: 200px 0;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(255, 255, 255, 0)
+    ),
+    url(/images/mobileimg/m_mainwallpaper@1x.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(255, 255, 255, 0)
+      ),
+      url(/images/mobileimgretina/m_mainwallpaper@2x.jpg);
+  }
+  @media screen and(min-width:768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(255, 255, 255, 0)
+      ),
+      url(/images/tabletimg/t_mainwallpaper@1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(255, 255, 255, 0)
+        ),
+        url(/images/tabletimgretina/t_mainwallpaper@2x.jpg);
+    }
+  }
+  @media screen and(min-width:1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(255, 255, 255, 0)
+      ),
+      url(/images/desktopimg/mainwallpaper@1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(255, 255, 255, 0)
+        ),
+        url(/images/desktopimgretina/mainwallpaper@2x.jpg);
+    }
+  }
 }
 
 .slider__heading {
   font-family: inherit;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.25;
   text-align: center;
   color: var(--white);
-  width: 696px;
+  width: 300px;
   margin: 0 auto;
-  @media screen and (max-width: 1200px) {
-    font-size: 26px;
+}
+
+@media screen and (min-width: 1200px) {
+  .slider__heading {
+    font-size: 44px;
+    width: 700px;
   }
 }

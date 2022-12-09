@@ -58,12 +58,25 @@
             >
           </li>
         </ul>
-        <!-- mobile menu -->
-        <!-- <div class="mobile-menu d-none">
-          <svg><use href="./images/icons.svg#mobile-menu"></use></svg>
-          <button class="toggle-menu">X</button>
-        </div> -->
-        <!-- mobile menu ends -->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -161,7 +174,7 @@
       <section class="description">
         <div class="container">
           <ul class="description__list">
-            <li>
+            <li class="description__tablet">
               <div class="description__border-icon">
                 <a href="#" class="description__focus">
                   <svg class="description__icon" width="70" height="70">
@@ -176,7 +189,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="description__tablet">
               <div class="description__border-icon">
                 <a href="#" class="description__focus">
                   <svg class="description__icon" width="70" height="70">
@@ -191,7 +204,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="description__tablet">
               <div class="description__border-icon">
                 <a href="#" class="description__focus">
                   <svg class="description__icon" width="70" height="70">
@@ -205,7 +218,7 @@
                 solution development and implementation.
               </p>
             </li>
-            <li>
+            <li class="description__tablet">
               <div class="description__border-icon">
                 <a href="#" class="description__focus">
                   <svg class="description__icon" width="70" height="70">
@@ -225,12 +238,17 @@
 
       <section class="section">
         <div class="container">
-          <h2 class="section-headers tablet">What we do</h2>
+          <h2 class="section-headers mobile-version">What we do</h2>
           <ul class="whatwedo">
             <li class="whatwedo__position">
               <a href="#" class="whatwedo__focus">
                 <img
-                  src="./images/tablet.jpg"
+                  src="./images/desktopimg/tablet@1x.jpg"
+                  srcset="
+                    ./images/desktopimg/tablet@1x.jpg       370w,
+                    ./images/desktopimgretina/tablet@2x.jpg 740w
+                  "
+                  sizes="(min-width:1200px)370px"
                   alt="person writing on computer"
                   height="294"
                 />
@@ -242,7 +260,12 @@
             <li class="whatwedo__position">
               <a href="#" class="whatwedo__focus">
                 <img
-                  src="./images/laptop.jpg"
+                  src="./images/desktopimg/laptop@1x.jpg"
+                  srcset="
+                    ./images/desktopimg/laptop@1x.jpg       370w,
+                    ./images/desktopimgretina/laptop@2x.jpg 740w
+                  "
+                  sizes="(min-width:1200px)370px"
                   alt="person working on laptop"
                   height="294"
                 />
@@ -252,7 +275,12 @@
             <li class="whatwedo__position">
               <a href="#" class="whatwedo__focus">
                 <img
-                  src="./images/tabletmac.jpg"
+                  src="./images/desktopimg/tabletmac@1x.jpg"
+                  srcset="
+                    ./images/desktopimg/tabletmac@1x.jpg       370w,
+                    ./images/desktopimgretina/tabletmac@2x.jpg 740w
+                  "
+                  sizes="(min-width:1200px)370px"
                   alt="person working on tablet"
                   height="294"
                 />
@@ -269,7 +297,16 @@
           <ul class="team__photo">
             <li class="team__photo-border">
               <img
-                src="./images/christopherwalker.jpg"
+                src="./images/desktopimg/christopherwalker@1x.jpg"
+                srcset="
+                  ./images/desktopimg/christopherwalker@1x.jpg        270w,
+                  ./images/desktopimgretina/christopherwalker@2x.jpg  540w,
+                  ./images/tabletimg/t_christopherwalker@1x.jpg       354w,
+                  ./images/tabletimgretina/t_christopherwalker@2x.jpg 708w,
+                  ./images/mobileimg/m_christopherwalker@1x.jpg       450w,
+                  ./images/mobileimgretina/m_christopherwalker@2x.jpg 900w
+                "
+                sizes="(min-width:1200px)270px, (min-width:768px)354px, (min-width:480px)450px 90vw"
                 alt="men in brown shirt"
                 height="260"
               />
@@ -315,7 +352,16 @@
 
             <li class="team__photo-border">
               <img
-                src="./images/kylieevans.jpg"
+                src="./images/desktopimg/kylieevans@1x.jpg"
+                srcset="
+                  ./images/desktopimg/kylieevans@1x.jpg        270w,
+                  ./images/desktopimgretina/kylieevans@2x.jpg  540w,
+                  ./images/tabletimg/t_kylieevans@1x.jpg       354w,
+                  ./images/tabletimgretina/t_kylieevans@2x.jpg 708w,
+                  ./images/mobileimg/m_kylieevans@1x.jpg       450w,
+                  ./images/mobileimgretina/m_kylieevans@2x.jpg 900w
+                "
+                sizes="(min-width:1200px)270px, (min-width:768px)354px, (min-width:480px)450px 90vw"
                 alt="women in blue shirt"
                 height="260"
               />
@@ -359,7 +405,16 @@
             </li>
             <li class="team__photo-border">
               <img
-                src="./images/ryanharris.jpg"
+                src="./images/desktopimg/ryanharris@1x.jpg"
+                srcset="
+                  ./images/desktopimg/ryanharris@1x.jpg        270w,
+                  ./images/desktopimgretina/ryanharris@2x.jpg  540w,
+                  ./images/tabletimg/t_ryanharris@1x.jpg       354w,
+                  ./images/tabletimgretina/t_ryanharris@2x.jpg 708w,
+                  ./images/mobileimg/m_ryanharris@1x.jpg       450w,
+                  ./images/mobileimgretina/m_ryanharris@2x.jpg 900w
+                "
+                sizes="(min-width:1200px)270px, (min-width:768px)354px, (min-width:480px)450px 90vw"
                 alt="men in white shirt"
                 height="260"
               />
@@ -403,7 +458,16 @@
             </li>
             <li class="team__photo-border">
               <img
-                src="./images/tylermoore.jpg"
+                src="./images/desktopimg/tylermoore@1x.jpg"
+                srcset="
+                  ./images/desktopimg/tylermoore@1x.jpg        270w,
+                  ./images/desktopimgretina/tylermoore@2x.jpg  540w,
+                  ./images/tabletimg/t_tylermoore@1x.jpg       354w,
+                  ./images/tabletimgretina/t_tylermoore@2x.jpg 708w,
+                  ./images/mobileimg/m_tylermoore@1x.jpg       450w,
+                  ./images/mobileimgretina/m_tylermoore@2x.jpg 900w
+                "
+                sizes="(min-width:1200px)270px, (min-width:768px)354px, (min-width:480px)450px 90vw"
                 alt="men in black t-shirt"
                 height="260"
               />
@@ -503,6 +567,31 @@
         </ul>
       </div>
     </section>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
     <div class="footer">
       <div class="container">
         <footer class="footer__container">
