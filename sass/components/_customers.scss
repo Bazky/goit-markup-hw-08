@@ -3,12 +3,13 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 .regular-customer__border {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid currentColor;
   color: var(--client-borders);
@@ -23,4 +24,16 @@
 .regular-customer__border:hover,
 .regular-customer__border:focus {
   color: var(--lightblue);
+}
+
+@media screen and(min-width:768px) {
+  .regular-customer__border {
+    width: 226px;
+  }
+}
+
+@media screen and(min-width:1200px) {
+  .regular-customer__border {
+    width: 170px;
+  }
 }

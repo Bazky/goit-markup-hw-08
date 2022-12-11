@@ -1,18 +1,17 @@
-.newsletter {
-  margin-left: 78px;
-}
-
 .newsletter__list {
   display: flex;
   gap: 10px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .newsletter__fieldset {
   display: flex;
-  width: 358px;
+  width: 450px;
   height: 50px;
   border-color: var(--grey);
   border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 .newsletter__input {
@@ -46,4 +45,20 @@
 .newsletter__button:hover,
 .newsletter__button:focus {
   box-shadow: var(--buttons-shadow);
+}
+
+@media (min-width: 1200px) {
+  .newsletter {
+    margin-left: 78px;
+  }
+
+  .newsletter__list {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+  }
+  .newsletter__fieldset {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }

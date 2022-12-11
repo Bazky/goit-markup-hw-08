@@ -2,16 +2,14 @@
   display: flex;
   gap: 10px;
   fill: var(--white);
+  justify-content: center;
 }
 .socials__header {
   font-weight: 700;
   margin-bottom: 20px;
 }
-.socials {
-  margin-left: 70px;
-}
+
 .socials__border-icon {
-  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,8 +19,25 @@
   background-color: var(--social-links-footer);
   transition: background-color var(--cubic-bezier);
   fill: var(--white);
+  margin-bottom: 60px;
 }
 .socials__border-icon:hover,
 .socials__border-icon:focus {
   background-color: var(--lightblue);
+}
+
+@media screen and (min-width: 1200px) {
+  .socials__list {
+    display: flex;
+    gap: 10px;
+  }
+
+  .socials {
+    margin-left: 70px;
+    margin-top: 15px;
+  }
+  .socials__border-icon {
+    left: 0;
+    margin-bottom: 0;
+  }
 }

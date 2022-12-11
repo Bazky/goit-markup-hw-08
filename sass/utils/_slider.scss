@@ -1,6 +1,6 @@
 .slider {
   background-size: cover;
-  max-width: 1600px;
+  max-width: 480px;
   height: 600px;
   background-repeat: no-repeat;
   background-position: center;
@@ -21,13 +21,19 @@
         rgba(255, 255, 255, 0)
       ),
       url(/images/mobileimgretina/m_mainwallpaper@2x.jpg);
+    max-width: 960px;
   }
+  @media screen and(min-width:481px) {
+    max-width: 960px;
+  }
+
   @media screen and(min-width:768px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(255, 255, 255, 0)
       ),
       url(/images/tabletimg/t_mainwallpaper@1x.jpg);
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -38,12 +44,19 @@
         url(/images/tabletimgretina/t_mainwallpaper@2x.jpg);
     }
   }
+
+  @media screen and(min-width:769px) {
+    max-width: 1536px;
+  }
+
   @media screen and(min-width:1200px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(255, 255, 255, 0)
       ),
       url(/images/desktopimg/mainwallpaper@1x.jpg);
+    max-width: 1600px;
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
