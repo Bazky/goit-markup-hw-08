@@ -17,14 +17,17 @@
   margin-bottom: 4px;
 }
 
+.photo-height {
+  height: 294px;
+}
+
 .products__border {
   width: 100%;
-
   transition: var(--cubic-bezier);
 }
 
 .products__margin {
-  padding: 20px 24px;
+  padding: 31px 24px;
   border: 1px solid #eeeeee;
 }
 
