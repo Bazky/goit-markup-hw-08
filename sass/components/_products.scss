@@ -1,6 +1,7 @@
 .products {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
   font-size: 16px;
   line-height: 1.25;
@@ -17,8 +18,8 @@
 }
 
 .products__border {
-  width: 370px;
-  flex-basis: calc((100% - 60px) / 3);
+  width: 100%;
+
   transition: var(--cubic-bezier);
 }
 
@@ -63,4 +64,22 @@
   font-size: 18px;
   color: var(--white);
   padding: 63px 24px 91px 24px;
+}
+
+@media screen and(min-width:768px) {
+  .products {
+    flex-direction: row;
+  }
+  .products__border {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and(min-width:1200px) {
+  .products {
+    flex-direction: row;
+  }
+  .products__border {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }

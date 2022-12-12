@@ -1,8 +1,13 @@
 .buttons-panel {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 50px;
-  gap: 8px;
+  gap: 10px;
+  justify-content: start;
+}
+.button-three {
+  width: 145px;
 }
 .button {
   background-color: var(--lightgrey);
@@ -23,4 +28,11 @@
   background-color: var(--lightblue);
   color: var(--white);
   box-shadow: var(--buttons-shadow);
+}
+
+@media screen and(min-width:768px) {
+  .buttons-panel {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }

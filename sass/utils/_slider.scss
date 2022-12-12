@@ -1,17 +1,17 @@
 .slider {
   background-size: cover;
-  max-width: 480px;
-  height: 600px;
+  max-width: 1600px;
+  height: 400px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--client-borders);
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 118px 0;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(255, 255, 255, 0)
     ),
-    url(/images/mobileimg/m_mainwallpaper@1x.jpg);
+    url(../images/mobileimg/m_mainwallpaper@1x.jpg);
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -20,11 +20,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(255, 255, 255, 0)
       ),
-      url(/images/mobileimgretina/m_mainwallpaper@2x.jpg);
-    max-width: 960px;
-  }
-  @media screen and(min-width:481px) {
-    max-width: 960px;
+      url(../images/mobileimgretina/m_mainwallpaper@2x.jpg);
   }
 
   @media screen and(min-width:768px) {
@@ -32,7 +28,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(255, 255, 255, 0)
       ),
-      url(/images/tabletimg/t_mainwallpaper@1x.jpg);
+      url(../images/tabletimg/t_mainwallpaper@1x.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -41,12 +37,8 @@
           rgba(47, 48, 58, 0.4),
           rgba(255, 255, 255, 0)
         ),
-        url(/images/tabletimgretina/t_mainwallpaper@2x.jpg);
+        url(../images/tabletimgretina/t_mainwallpaper@2x.jpg);
     }
-  }
-
-  @media screen and(min-width:769px) {
-    max-width: 1536px;
   }
 
   @media screen and(min-width:1200px) {
@@ -54,8 +46,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(255, 255, 255, 0)
       ),
-      url(/images/desktopimg/mainwallpaper@1x.jpg);
-    max-width: 1600px;
+      url(../images/desktopimg/mainwallpaper@1x.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -64,7 +55,9 @@
           rgba(47, 48, 58, 0.4),
           rgba(255, 255, 255, 0)
         ),
-        url(/images/desktopimgretina/mainwallpaper@2x.jpg);
+        url(../images/desktopimgretina/mainwallpaper@2x.jpg);
+      height: 600px;
+      padding: 200px 0;
     }
   }
 }

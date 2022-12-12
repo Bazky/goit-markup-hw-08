@@ -17,6 +17,7 @@
 .legal-checkbox {
   display: flex;
   gap: 7px;
+  padding: 0 30px;
 }
 
 .checkbox .checkmark {
@@ -64,4 +65,10 @@
 .form-button:hover,
 .form-button:focus {
   box-shadow: var(--buttons-shadow);
+}
+
+@media screen and(min-width:1200px) {
+  .legal-checkbox {
+    padding: 0;
+  }
 }

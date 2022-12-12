@@ -4,17 +4,11 @@
 
 .description__border-icon {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  max-width: 450px;
   height: 120px;
   background-color: var(--lightgrey);
   border-radius: 4px;
-}
-
-.description__icon {
-  justify-content: center;
-  margin: 0 14em;
 }
 
 .description__header {
@@ -28,7 +22,6 @@
 .description__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   text-align: start;
   gap: 30px;
   line-height: 2em;
@@ -49,10 +42,6 @@
     max-width: 354px;
   }
 
-  .description__icon {
-    margin: 0 10em;
-  }
-
   .description__tablet {
     flex-basis: calc((100% - 30px) / 2);
   }
@@ -69,9 +58,6 @@
     width: 270px;
   }
 
-  .description__icon {
-    margin: 0 7em;
-  }
   .description__list {
     flex-wrap: nowrap;
   }
