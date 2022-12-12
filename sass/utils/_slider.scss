@@ -47,6 +47,8 @@
         rgba(255, 255, 255, 0)
       ),
       url(../images/desktopimg/mainwallpaper@1x.jpg);
+    height: 600px;
+    padding: 200px 0;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -56,8 +58,6 @@
           rgba(255, 255, 255, 0)
         ),
         url(../images/desktopimgretina/mainwallpaper@2x.jpg);
-      height: 600px;
-      padding: 200px 0;
     }
   }
 }
