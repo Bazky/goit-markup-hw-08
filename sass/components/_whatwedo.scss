@@ -1,13 +1,5 @@
-@media screen and (max-width: 1200px) {
-  .whatwedo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    display: none;
-  }
-  .mobile-version {
+@media screen and (max-width: 1199px) {
+  .work {
     display: none;
   }
 }
@@ -39,5 +31,9 @@
   }
   .whatwedo__focus:focus {
     text-decoration: none;
+  }
+  .work {
+    padding-top: 0;
+    padding-bottom: 94px;
   }
 }
