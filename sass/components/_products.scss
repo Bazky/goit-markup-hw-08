@@ -17,10 +17,6 @@
   margin-bottom: 4px;
 }
 
-.photo-height {
-  height: 294px;
-}
-
 .products__border {
   width: 100%;
   transition: var(--cubic-bezier);
@@ -69,12 +65,20 @@
   padding: 63px 24px 91px 24px;
 }
 
-@media screen and(min-width:768px) {
+@media screen and(min-width:768px) and (max-width: 1199px) {
   .products {
     flex-direction: row;
   }
   .products__border {
     flex-basis: calc((100% - 30px) / 2);
+  }
+  .products__overlay {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .products__margin {
+    flex-grow: 1;
   }
 }
 

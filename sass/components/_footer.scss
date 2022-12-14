@@ -32,7 +32,8 @@
   .footer__tablet {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: baseline;
     gap: 4em;
   }
 
